@@ -1,6 +1,4 @@
-body {
-    background-image:url(../images/purple-background.jpg);
+html {
+    background: url(../images/purple-background.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
