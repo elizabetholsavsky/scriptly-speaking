@@ -13,7 +13,7 @@ Update.init (
         },
         update_body: {
             type: DataTypes.TEXT,
-            allowNull: false,
+            allowNull: false
         },
         post_id: {
             type: DataTypes.INTEGER,
