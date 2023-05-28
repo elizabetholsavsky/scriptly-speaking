@@ -13,7 +13,7 @@ Comment.init (
         },
         comment_text: {
             type: DataTypes.TEXT,
-            allowNull: false
+            allowNull: false,
         },
         post_id: {
             type: DataTypes.INTEGER,
