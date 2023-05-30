@@ -1,3 +1,10 @@
+/* reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* color scheme */
 :root {
     --card-background: rgba(35, 35, 35, 0.8);
     --btn: #b83619;
@@ -12,12 +19,43 @@
 
 }
 
+/* cover img */
 html {
     background: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
 }
 
+/* NAV */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--card-background);
+    padding: 10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif; 
+    text-transform: uppercase;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--font-color);
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+.nav-link:hover {
+    color: var(--highlight);
+}
+
+/* LOGIN & SIGN UP LAYOUT */
 .card-container {
     display: flex;
     align-items: center;
@@ -26,7 +64,6 @@ html {
     flex-wrap: wrap;
 }
 
-/* LOGIN & SIGN UP PAGE */
 .auth-card {
     display: flex;
     justify-content: center;
@@ -78,7 +115,7 @@ html {
     margin: 10px 0 10px 0;
 }
 
-/* NEW POST PAGE */
+/* NEW POST LAYOUT */
 .post-container {
     display: flex;
     align-items: center;
@@ -146,7 +183,7 @@ html {
     margin: 10px 0 10px 0;
 }
 
-/* READ POST CARD */
+/* READ SINGLE POST LAYOUT */
 .post-container {
     display: flex;
     justify-content: center;
