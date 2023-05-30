@@ -21,7 +21,7 @@ router.get('/login', async (req, res) => {
 
 router.get('/new', async (req, res) => {
     try {
-        res.render('login');
+        res.render('new');
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
