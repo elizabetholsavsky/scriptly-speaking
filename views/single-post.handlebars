@@ -1,0 +1,32 @@
+<div class="post-container">
+    {{!-- post --}}
+    <div class="post-card">
+        <div class="post-title">
+            <h3>{{post.title}}</h3> <br>
+            <p>Created by <strong>{{post.user.username}} </strong> on <strong>{{format_date post.createdAt}} </strong></p> 
+        </div>
+
+        <hr>
+
+        <div class="post-body">
+            {{post.post_body}}
+        </div>
+        
+        <div class="comment-container">
+            {{!-- comment form --}}
+            <form id="comment-form">
+                    <div>
+                        <label for="comment-form">Comment</label> <br>
+                        <textarea id="comment" rows="3"></textarea>
+                        <div class="btn-container">
+                            <button type="submit" class="submit-btn">SUBMIT</button>
+                        </div> 
+                    </div>
+                </form>
+
+            {{!-- existing comments --}}
+            <div class="comments">
+            </div>
+        </div>
+    </div>
+</div>
