@@ -1,32 +1,40 @@
 <div class="post-container">
     {{!-- post --}}
     <div class="post-card">
-        <div class="post-title">
-            <h3>{{post.title}}</h3> <br>
-            <p>Created by <strong>{{post.user.username}} </strong> on <strong>{{format_date post.createdAt}} </strong></p> 
-        </div>
-
-        <hr>
-
+        <p class="post-title"><strong>{{post.title}}</strong></p>
+        <p class="post-info">Created by <strong>{{post.user.username}} </strong> on <strong>{{format_date post.createdAt}} </strong></p> 
+    
         <div class="post-body">
             {{post.post_body}}
         </div>
+
+        {{#if post.myBlog}}
+            <div class="btn-container">
+                <button type="submit" class="submit-btn">UPDATE</button>
+                <button type="submit" class="submit-btn">DELETE</button>
+            </div> 
+        {{/if}}
         
+        <hr>
+
         <div class="comment-container">
+
+            {{!-- existing comments --}}
+            {{#each comments}}
+                <p class="comment-title"><strong>Comments</strong></p>
+                {{> card-comment}}
+            {{/each}}
+
             {{!-- comment form --}}
             <form id="comment-form">
                     <div>
-                        <label for="comment-form">Comment</label> <br>
+                        <label>Leave a comment</label> <br>
                         <textarea id="comment" rows="3"></textarea>
                         <div class="btn-container">
                             <button type="submit" class="submit-btn">SUBMIT</button>
                         </div> 
                     </div>
-                </form>
-
-            {{!-- existing comments --}}
-            <div class="comments">
-            </div>
+            </form>
         </div>
     </div>
 </div>
