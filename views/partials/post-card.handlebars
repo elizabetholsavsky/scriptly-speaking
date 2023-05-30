@@ -1,0 +1,24 @@
+<div class="card-container">
+    {{!-- post --}}
+    <div class="post-card">
+        <h3>{{this.title}}</h3>
+        <p>Created {{this.createdAt}} by {{this.user.username}}</p>
+        {{this.post_body}}
+    </div>
+
+    {{!-- comment form --}}
+    <form id="comment-form">
+            <div>
+                <label for="comment-form"><strong>COMMENT</strong></label> <br>
+                <textarea id="comment" rows="3"></textarea>
+                <div class="btn-container">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div> 
+            </div>
+        </form>
+
+    {{!-- existing comments --}}
+    <div class="comments">
+        
+    </div>
+</div>
