@@ -53,9 +53,9 @@ html {
     margin: 10px;
     color: var(--highlight);
     text-transform: uppercase;
-    font-size: 1.25rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif;}
 
 .btn-container {
     text-align: center;
@@ -124,6 +124,8 @@ html {
     text-transform: uppercase;
     font-size: 1.25rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif;
 }
 
 
@@ -165,6 +167,8 @@ html {
     margin: 5px;
     color: var(--title);
     text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif;    
 }
 
 .post-info {
@@ -194,11 +198,13 @@ hr {
 }
 
 #comment-form label {
-    text-align: center !important;
+    text-align: center;
     font-weight: bold;
     color: var(--highlight);
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif;   
 }
 
 .comments {
