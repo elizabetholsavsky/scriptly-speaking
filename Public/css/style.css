@@ -16,7 +16,6 @@
     font-family: 'Roboto', sans-serif;    
     font-size: 1.25rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
 
 /* cover img */
@@ -24,6 +23,7 @@ html {
     background: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 
 /* NAV */
@@ -32,6 +32,14 @@ html {
     top: 0;
     background-color: var(--card-background);
     padding: 10px;
+    display: flex;
+}
+
+.logo-img {
+    margin: auto 0;
+    margin: 10px 10px 0 10px;
+    height: 60px;
+    width: auto;
 }
 
 .nav-list {
@@ -247,3 +255,5 @@ hr {
 .comments {
     text-align: left;
 }
+
+/* MEDIA QUERIES */
