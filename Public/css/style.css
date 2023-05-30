@@ -153,23 +153,21 @@ html {
 .post-card {
     display: inline-block;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
     margin: 20px;
     width: 75%;
     height: fit-content;
     background-color: var(--card-background);   
 } 
 
-.post-card h3, .post-card p {
-    margin: 0
-}
-
-.post-card h3{
+.post-title, .comment-title {
+    text-align: center;
+    margin: 5px;
     color: var(--title);
-    font-size: 1.75rem;
+    text-transform: uppercase;
 }
 
-.post-title {
+.post-info {
     text-align: center;
 }
 
@@ -187,7 +185,7 @@ hr {
 
 #comment-form textarea {
     width: 90%;
-    padding: 15px;
+    padding: 10px;
     margin: 10px 0 10px 0;
     background-color: var(--font-color);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -200,6 +198,9 @@ hr {
     font-weight: bold;
     color: var(--highlight);
     text-transform: uppercase;
-    font-size: 1.25rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.comments {
+    text-align: left;
 }
