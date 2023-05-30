@@ -1,4 +1,205 @@
+:root {
+    --card-background: rgba(35, 35, 35, 0.8);
+    --btn: #b83619;
+    --btn2:  #6a1e0e;
+    --highlight:  rgb(255, 218, 116);
+    --title: rgb(251, 141, 23);
+    --font-color:  rgb(252, 245, 237) ;
+    color: var(--font-color); 
+    font-family: 'Roboto', sans-serif;    
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
 html {
-    background: url(../images/purple-background.jpg);
-    background-repeat: no-repeat;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    flex-wrap: wrap;
+}
+
+/* LOGIN & SIGN UP PAGE */
+.auth-card {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: min-content;
+    height: 380px;
+    background-color: var(--card-background);   
+}
+
+.auth-card input {
+    width: 200px;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: var(--font-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: .75rem;
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin: 10px;
+    color: var(--highlight);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.auth-submit-btn {
+    display: inline-block;
+    padding: 12px 12px;
+    color: var(--font-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--btn), var(--btn2));
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+/* NEW POST PAGE */
+.post-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    flex-wrap: wrap;
+}
+
+.new-post-card {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 75%;
+    height: fit-content;
+    background-color: var(--card-background);   
+}
+
+.new-post-card form {
+    width: 100%;
+    text-align: center;
+}
+
+#new-post-title, #new-post-body {
+    width: 80%;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--font-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: .75rem;
+}
+
+#new-post-body {
+    height: 300px;
+}
+
+.new-post-card label {
+    font-weight: bold;
+    margin: 10px;
+    color: var(--highlight);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.submit-btn {
+    display: inline-block;
+    padding: 12px 12px;
+    color: var(--font-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--btn), var(--btn2));
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 200px;
+    margin: 10px 0 10px 0;
+}
+
+/* READ POST CARD */
+.post-container {
+    display: flex;
+    justify-content: center;
+}
+
+.post-card {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 75%;
+    height: fit-content;
+    background-color: var(--card-background);   
+} 
+
+.post-card h3, .post-card p {
+    margin: 0
+}
+
+.post-card h3{
+    color: var(--title);
+    font-size: 1.75rem;
+}
+
+.post-title {
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0 20px 0;
+}
+
+.post-body {
+    margin-bottom: 20px;
+}
+
+.comment-container {
+    text-align: center;
+}
+
+#comment-form textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0 10px 0;
+    background-color: var(--font-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: .75rem;
+}
+
+#comment-form label {
+    text-align: center !important;
+    font-weight: bold;
+    color: var(--highlight);
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
