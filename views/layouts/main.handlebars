@@ -20,12 +20,9 @@
             <li><a href="/" class="nav-link">Home</a></li>
             <li><a href="/feed" class="nav-link">Feed</a></li>
             <li><a href="/new" class="nav-link">New</a></li>
-            {{#if loggedIn}}
-            <li><a href="/logout" class="nav-link">Log Out</a></li>
+            <li><a href="/logout" class="nav-link" id="logout">Log Out</a></li>
             <script src="/js/logout.js"></script>
-            {{else}}
             <li><a href="/login" class="nav-link">Log In</a></li>
-            {{/if}}
         </ul>
     </nav>
 
