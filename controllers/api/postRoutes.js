@@ -9,10 +9,10 @@ router.get("/:id", async (req, res) => {
             },
             include: [{
                 model: User,
-                attributes: { exclude: ['password', 'email'] },
+                attributes: { exclude: ['password'] },
             },
             {
-                model: Revision,
+                model: Update,
                 include: {
                     model: User,
                     attributes: ['username'],

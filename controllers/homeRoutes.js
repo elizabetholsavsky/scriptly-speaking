@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment, Update } = require('../models');
 
+// home
 router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({
@@ -29,6 +30,7 @@ router.get('/', async (req, res) => {
     }
 });
 
+// render login page if not logged in
 router.get('/login', async (req, res) => {
     try {
         if (req.session.logged_in) {
@@ -42,6 +44,7 @@ router.get('/login', async (req, res) => {
     }
 });
 
+// render new post page if logged in
 router.get('/new', async (req, res) => {
     try {
         if (req.session.logged_in) {
