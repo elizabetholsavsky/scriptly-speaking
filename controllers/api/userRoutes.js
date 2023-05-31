@@ -64,7 +64,7 @@ router.get('/', async (req, res) => {
     try {
         const userData = await User.findAll({
             attributes: {
-                exclude: ['password']
+                // exclude: ['password']
             }
         });
         res.status(200).json(userData);
