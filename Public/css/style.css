@@ -19,7 +19,7 @@
 }
 
 /* cover img */
-html {
+body {
     background: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
@@ -167,6 +167,7 @@ html {
 
 #new-post-body {
     height: 300px;
+    resize: vertical;
 }
 
 .new-post-card label {
