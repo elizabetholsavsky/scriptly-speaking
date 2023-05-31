@@ -6,16 +6,16 @@
 
 /* color scheme */
 :root {
-    --card-background: rgba(35, 35, 35, 0.8);
-    --btn: #b83619;
-    --btn2:  #6a1e0e;
-    --highlight:  rgb(255, 218, 116);
-    --title: rgb(251, 141, 23);
-    --font-color:  rgb(252, 245, 237) ;
-    color: var(--font-color); 
+    --blue-it: rgb(95, 189, 191);
+    --judgement-gray: rgba(35, 35, 35, 0.8);
+    --red-zeppelin: #b83619;
+    --ron-burgundy:  #6a1e0e;
+    --cheese:  rgb(255, 221, 129);
+    --daily-rind: rgb(255, 155, 48);
+    --live-laugh-beige:  rgb(252, 245, 237) ;
+    color: var(--live-laugh-beige); 
     font-family: 'Roboto', sans-serif;    
     font-size: 1.25rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* cover img */
@@ -26,44 +26,44 @@ html {
     height: 100vh;
 }
 
-/* NAV */
+/* NAV ******************************************************************/
 .navbar {
     position: sticky;
     top: 0;
-    background-color: var(--card-background);
-    padding: 10px;
+    background-color: var(--blue-it);
+    padding: 10px 30px 10px 30px;
     display: flex;
+    justify-content: space-between;
 }
 
 .logo-img {
-    margin: auto 0;
-    margin: 10px 10px 0 10px;
-    height: 60px;
+    margin-top: 10px;
+    height: 50px;
     width: auto;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
-    justify-content:flex-end;
     align-items: center;
     font-size: 1.25rem;
     font-family: 'Secular One', sans-serif; 
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav-link {
     text-decoration: none;
-    color: var(--font-color);
+    color: black;
     margin: 0 10px;
     padding: 5px 10px;
 }
 
 .nav-link:hover {
-    color: var(--highlight);
+    color: var(--ron-burgundy);
 }
 
-/* LOGIN & SIGN UP LAYOUT */
+/* LOGIN & SIGN UP LAYOUT *****************************************************************/
 .card-container {
     display: flex;
     align-items: center;
@@ -77,18 +77,18 @@ html {
     justify-content: center;
     border-radius: 20px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     width: min-content;
-    height: 380px;
-    background-color: var(--card-background);   
+    height: 400px;
+    background-color: var(--judgement-gray);   
 }
 
 .auth-card input {
     width: 200px;
     padding: 15px;
     margin: 10px 0 10px 0;
-    background-color: var(--font-color);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--live-laugh-beige);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     font-size: .75rem;
 }
@@ -96,11 +96,12 @@ html {
 .auth-card h2 {
     text-align: center;
     margin: 10px;
-    color: var(--highlight);
+    color: var(--cheese);
     text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
-    font-family: 'Secular One', sans-serif;}
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
 
 .btn-container {
     text-align: center;
@@ -109,18 +110,24 @@ html {
 .auth-submit-btn {
     display: inline-block;
     padding: 12px 12px;
-    color: var(--font-color);
+    color: var(--live-laugh-beige);
     font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif;
     text-align: center;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    background-image: linear-gradient(var(--btn), var(--btn2));
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(var(--red-zeppelin), var(--ron-burgundy));
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    outline: var(--ron-burgundy);
     cursor: pointer;
     width: 100%;
     margin: 10px 0 10px 0;
+}
+
+.auth-submit-btn:hover {
+    background: var(--ron-burgundy);
 }
 
 /* NEW POST LAYOUT */
@@ -140,7 +147,7 @@ html {
     margin: 20px;
     width: 75%;
     height: fit-content;
-    background-color: var(--card-background);   
+    background-color: var(--judgement-gray);   
 }
 
 .new-post-card form {
@@ -152,8 +159,8 @@ html {
     width: 80%;
     padding: 15px;
     margin: 10px;
-    background-color: var(--font-color);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: var(--live-laugh-beige);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);    
     border-radius: 10px;
     font-size: .75rem;
 }
@@ -165,10 +172,10 @@ html {
 .new-post-card label {
     font-weight: bold;
     margin: 10px;
-    color: var(--highlight);
+    color: var(--cheese);
     text-transform: uppercase;
     font-size: 1.25rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
     font-family: 'Secular One', sans-serif;
 }
@@ -177,21 +184,27 @@ html {
 .submit-btn {
     display: inline-block;
     padding: 12px 12px;
-    color: var(--font-color);
+    color: var(--live-laugh-beige);
     font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Secular One', sans-serif;
     text-align: center;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    background-image: linear-gradient(var(--btn), var(--btn2));
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(var(--red-zeppelin), var(--ron-burgundy));
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    outline: var(--ron-burgundy);
     cursor: pointer;
     width: 200px;
     margin: 10px 0 10px 0;
 }
 
-/* READ SINGLE POST LAYOUT */
+.submit-btn:hover {
+    background: var(--ron-burgundy);
+}
+
+/* READ SINGLE POST LAYOUT ******************************************************************/
 .post-container {
     display: flex;
     justify-content: center;
@@ -204,16 +217,18 @@ html {
     margin: 20px;
     width: 75%;
     height: fit-content;
-    background-color: var(--card-background);   
+    background-color: var(--judgement-gray);   
+    text-align: center;
+
 } 
 
 .post-title, .comment-title {
-    text-align: center;
     margin: 5px;
-    color: var(--title);
+    color: var(--daily-rind);
     text-transform: uppercase;
     font-size: 1.25rem;
-    font-family: 'Secular One', sans-serif;    
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);    
 }
 
 .post-info {
@@ -236,7 +251,7 @@ hr {
     width: 90%;
     padding: 10px;
     margin: 10px 0 10px 0;
-    background-color: var(--font-color);
+    background-color: var(--live-laugh-beige);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     font-size: .75rem;
@@ -245,15 +260,31 @@ hr {
 #comment-form label {
     text-align: center;
     font-weight: bold;
-    color: var(--highlight);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    color: var(--cheese);
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 1.25rem;
     font-family: 'Secular One', sans-serif;   
 }
 
-.comments {
-    text-align: left;
-}
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES ******************************************************************/
+@media (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-list {
+    display: none;
+    }
+
+    .auth-card {
+    width: 75%;
+    }
+
+    #login-card {
+    margin-top: 25px;
+    }
+    
+}
