@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
         const postData = await Post.findAll({
             include: [{
                 model: User,
-                attributes: { exclude: ['password', 'email'] },
+                attributes: { exclude: ['password'] },
             }, 
             {
                 model: Comment,
