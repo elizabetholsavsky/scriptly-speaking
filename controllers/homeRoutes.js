@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment, Update } = require('../models');
 
-// feed
+// home (feed)
 router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
             }],
             order: [['updated_at', 'DESC']]
         });
-        res.render('feed', {
+        res.render('home', {
             posts: postData.map((p) => p.get({ plain: true })),
             feed: true,
             loggedIn: req.session.logged_in,
