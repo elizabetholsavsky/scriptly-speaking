@@ -1,9 +1,3 @@
-<h1>FEED</h1>
-
 {{#each posts }}
-    {{#if myBlog}}
-        {{> card-post }}
-    {{/if}}
-    {{else}}
-    <a href="/new">Create your first post!</a>
+    {{> card-post }}
 {{/each}}

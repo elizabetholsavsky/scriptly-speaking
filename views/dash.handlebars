@@ -1,0 +1,10 @@
+{{#each posts }}
+        {{> card-post }}
+    {{else}}
+    <div class="feed-post-container">
+        <div class="post-card">
+            <a href="/new" class="med-yellow-title">Create your first post!</a>
+        </div>
+    </div>
+    
+{{/each}}

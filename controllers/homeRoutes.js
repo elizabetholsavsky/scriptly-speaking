@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Post, Comment, Update } = require('../models');
 
-// home
+// feed
 router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
             }],
             order: [['updated_at', 'DESC']]
         });
-        res.render('home', {
+        res.render('feed', {
             posts: postData.map((p) => p.get({ plain: true })),
             feed: true,
             loggedIn: req.session.logged_in,
@@ -30,20 +30,42 @@ router.get('/', async (req, res) => {
     }
 });
 
-// feed
-router.get('/feed', async (req, res) => {
+// dash
+router.get('/dash', async (req, res) => {
     try {
-        const postData = await Post.findAll({
-        where: {
-            user_id: req.session.user_id,
-        },
-    });
-    res.render( 'feed', {
-        posts: postData.map((post) => post.get({ plain: true }))
-    });
+        if (req.session.logged_in) {
+            const postData = await Post.findAll({
+            where: {
+                user_id: req.session.user_id,
+            },
+            include: [{
+                model: User,
+                attributes: { exclude: ['password'] },
+            }, 
+            {
+                model: Comment,
+                include: {
+                    model: User,
+                    attributes: ['id', 'username'],
+                }
+            }],
+            order: [['updated_at', 'DESC']]
+            });
+
+            const posts = postData.map((post) => post.get({ plain: true }));
+
+            res.render('dash', {
+                posts,
+                loggedIn: req.session.logged_in,
+                userId: req.session.user_id,
+            });
+            return;
+        } else {
+            res.redirect('/login');
+        }
+        
     } catch (err) {
         console.log(err);
-        res.status(500).json(err);
     }
 });
 
@@ -51,7 +73,7 @@ router.get('/feed', async (req, res) => {
 router.get('/login', async (req, res) => {
     try {
         if (req.session.logged_in) {
-            res.redirect('/');
+            res.redirect('/feed');
             return;
         }
         res.render('login');
