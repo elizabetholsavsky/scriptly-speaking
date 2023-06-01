@@ -16,6 +16,27 @@ router.post('/', async (req, res) => {
     }
 });
 
+// delete post
+router.delete('/:id', async (req, res) => {
+    try {
+        const postData = await Post.destroy({
+            where: {
+                id: req.params.id,
+                user_id: req.session.user_id,
+            },
+        });
+    
+    if (!postData) {
+        res.status(404).json({ message: "No post with that id!"});
+        return;
+    }
+
+    res.status(200).json(postData);
+    } catch (err) {
+        res.status(500).json(err);
+    } 
+});
+
 // get single post by ID
 router.get('/:id', async (req, res) => {
     try {
