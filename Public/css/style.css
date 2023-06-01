@@ -88,7 +88,6 @@ body {
     padding: 10px;
     margin: 10px 0 10px 0;
     background-color: var(--live-laugh-beige);
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     font-size: 1rem;
 }
@@ -159,10 +158,10 @@ body {
     width: 80%;
     padding: 15px;
     margin: 10px;
-    background-color: var(--live-laugh-beige);
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);    
+    background-color: var(--live-laugh-beige); 
     border-radius: 10px;
-    font-size: .75rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 #new-post-body {
@@ -244,6 +243,10 @@ hr {
     margin-bottom: 20px;
 }
 
+.comments {
+    padding: 10px;
+}
+
 .comment-container {
     text-align: center;
 }
@@ -253,25 +256,14 @@ hr {
     padding: 10px;
     margin: 10px 0 10px 0;
     background-color: var(--live-laugh-beige);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    font-size: .75rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;  
     resize: vertical;
 
 }
 
-#comment-form label {
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    color: var(--cheese);
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 1.25rem;
-    font-family: 'Secular One', sans-serif;   
-}
-
-/* HOME FEED */
+/* HOME FEED  ***********************/
 .feed-post-container {
     display: flex;
     justify-content: center;
