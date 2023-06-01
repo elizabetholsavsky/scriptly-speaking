@@ -39,8 +39,6 @@ router.get('/:id', async (req, res) => {
             return c;
         });
 
-        console.log(comments);
-
         res.render("single-post", {
             post,
             comments,
