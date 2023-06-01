@@ -1,0 +1,7 @@
+<h1>{{user.username}}</h1>
+
+{{#each posts }}
+    {{#if myBlog}}
+        {{> card-post }}
+    {{/if}}
+{{/each}}

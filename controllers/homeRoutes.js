@@ -30,6 +30,35 @@ router.get('/', async (req, res) => {
     }
 });
 
+// feed
+router.get('/feed', async (req, res) => {
+    try {
+        const postData = await Post.findAll({
+            include: [{
+                model: User,
+                attributes: { exclude: ['password'] },
+            }, 
+            {
+                model: Comment,
+                include: {
+                    model: User,
+                    attributes: ['id', 'username'],
+                }
+            }],
+            order: [['updated_at', 'DESC']]
+        });
+        res.render('feed', {
+            posts: postData.map((p) => p.get({ plain: true })),
+            feed: true,
+            loggedIn: req.session.logged_in,
+            userId: req.session.user_id,
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
 // render login page if not logged in
 router.get('/login', async (req, res) => {
     try {
