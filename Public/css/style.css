@@ -271,6 +271,11 @@ hr {
     font-family: 'Secular One', sans-serif;   
 }
 
+/* HOME FEED */
+.feed-post-container {
+    display: flex;
+    justify-content: center;
+}
 
 /* MEDIA QUERIES ***********************/
 @media (max-width: 800px) {
