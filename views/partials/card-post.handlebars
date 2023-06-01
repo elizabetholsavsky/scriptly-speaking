@@ -1,13 +1,16 @@
 <div class="feed-post-container">
-    <div class="post-card">
+    <div class="post-card" id="post-link" data-id={{this.id}} data-user={{this.user.username}}>
         <p class="post-title"><strong>{{this.title}}</strong></p>
         <p class="post-info">Created by <strong>{{this.user.username}} </strong> on <strong>{{format_date this.createdAt}} </strong></p> 
         <br>
         <div class="post-body">
-            {{this.post_body}}
+            <div class="truncate-text">
+                {{this.post_body}} 
+            </div>
         </div>
 
-        {{num_of_comments this.comments}}
-
+        <div class="num-comment-title">
+            {{num_of_comments this.comments}}
+        </div>
     </div>
 </div>
