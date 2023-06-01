@@ -183,10 +183,9 @@ body {
 
 .submit-btn {
     display: inline-block;
-    padding: 12px 12px;
+    padding: 10px;
     color: var(--live-laugh-beige);
     font-size: 1rem;
-    font-size: 1.25rem;
     font-family: 'Secular One', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -196,8 +195,8 @@ body {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     outline: var(--ron-burgundy);
     cursor: pointer;
-    width: 200px;
-    margin: 10px 0 10px 0;
+    width: 100px;
+    margin: 10px;
 }
 
 .submit-btn:hover {
@@ -231,6 +230,11 @@ body {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);    
 }
 
+.username {
+    color: var(--blue-it);
+    font-weight: bold;
+}
+
 .post-info {
     text-align: center;
 }
@@ -241,6 +245,28 @@ hr {
 
 .post-body {
     margin-bottom: 20px;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 10px;
+    color: var(--judgement-gray);
+    font-size: 1rem;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--cheese), var(--daily-rind));
+    outline: var(--ron-burgundy);
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+}
+
+.edit-btn:hover {
+    background: var(--daily-rind);
 }
 
 .comments {

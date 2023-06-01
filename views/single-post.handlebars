@@ -2,7 +2,7 @@
     {{!-- post --}}
     <div class="post-card">
         <p class="post-title"><strong>{{post.title}}</strong></p>
-        <p class="post-info">Created by <strong>{{post.user.username}} </strong> on <strong>{{format_date post.createdAt}} </strong></p> 
+        <p class="post-info">Created by <span class="username">{{post.user.username}}</span> on <strong>{{format_date post.createdAt}} </strong></p> 
         <br>
         <div class="post-body">
             {{post.post_body}}
@@ -10,8 +10,8 @@
 
         {{#if post.myBlog}}
             <div class="btn-container">
-                <button type="submit" class="submit-btn" id="update-btn">UPDATE</button>
-                <button type="submit" class="submit-btn" id="delete-btn">DELETE</button>
+                <button type="submit" class="edit-btn" id="update-btn">UPDATE</button>
+                <button type="submit" class="edit-btn" id="delete-btn">DELETE</button>
             </div> 
         {{/if}}
         

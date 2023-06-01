@@ -1,7 +1,7 @@
 <div class="feed-post-container">
     <div class="post-card" id="post-link" data-id={{this.id}} data-user={{this.user.username}}>
         <p class="post-title"><strong>{{this.title}}</strong></p>
-        <p class="post-info">Created by <strong>{{this.user.username}} </strong> on <strong>{{format_date this.createdAt}} </strong></p> 
+        <p class="post-info">Created by <span class="username">{{this.user.username}}</span> on <strong>{{format_date this.createdAt}} </strong></p> 
         <br>
         <div class="post-body">
             <div class="truncate-text">
