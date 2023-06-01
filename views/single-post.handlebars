@@ -15,13 +15,17 @@
             </div> 
         {{/if}}
         
+        {{!-- line break to separate post and comments --}}
         <hr>
 
         <div class="comment-container">
-
+            {{!-- show title if comment(s) exists, otherwise just show form --}}
+            {{#if comments}}
+                <p class="comment-title"><strong>Comments</strong></p>
+            {{/if}}
+            
             {{!-- existing comments --}}
             {{#each comments}}
-                <p class="comment-title"><strong>Comments</strong></p>
                 {{> card-comment}}
             {{/each}}
 
@@ -29,7 +33,7 @@
             <form id="comment-form">
                     <div>
                         <br>
-                        <label>Leave a comment</label> <br>
+                        <label class="med-yellow-title">Leave a comment</label> <br>
                         <textarea id="comment" rows="3"></textarea>
                         <div class="btn-container">
                             <button type="submit" class="submit-btn">SUBMIT</button>
@@ -39,3 +43,5 @@
         </div>
     </div>
 </div>
+
+<script src="/js/newComment.js"></script>
