@@ -353,9 +353,10 @@ hr {
 
     .navbar-hamburger {
         display: block;
+        position: relative;
         text-align: right;
         padding: 10px;
-        margin-left: 50px;
+        padding-left: 20px;
         cursor: pointer;
         margin: auto 0;
     }
@@ -363,8 +364,8 @@ hr {
     .navbar-hamburger span {
         display: block;
         width: 25px;
-        height: 3px;
-        background-color: black;
+        height: 4px;
+        background-color: var(--judgement-gray);
         border-radius: 2px;
         margin-bottom: 5px;
         border-radius: 20px;
@@ -372,5 +373,13 @@ hr {
 
     .navbar {
         justify-content: center;
+    }
+
+    .edit-btn {
+        margin: 5px;
+    }
+
+    #new-post-body {
+        height: 200px;
     }
 }
