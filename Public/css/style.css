@@ -52,6 +52,20 @@ body {
     font-weight: bold;
 }
 
+
+.nav-list.open {
+    display: block;
+}
+
+.nav-list li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.navbar-hamburger {
+    display: none;
+}
+
 .nav-link {
     text-decoration: none;
     color: black;
@@ -250,7 +264,7 @@ hr {
 .edit-btn {
     display: inline-block;
     padding: 10px;
-    color: var(--judgement-gray);
+    color: black;
     font-size: 1rem;
     font-family: 'Secular One', sans-serif;
     font-weight: bold;
@@ -313,21 +327,44 @@ hr {
 }
 
 /* MEDIA QUERIES ***********************/
-@media (max-width: 800px) {
+
+/* hamburger */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f9f9f9;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .nav-list.open {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--blue-it);
+    }
+
+    .navbar-hamburger {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        margin-left: 50px;
+        cursor: pointer;
+        margin: auto 0;
+    }
+
+    .navbar-hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        border-radius: 2px;
+        margin-bottom: 5px;
+    }
+
     .navbar {
         justify-content: center;
     }
-
-    .nav-list {
-    display: none;
-    }
-
-    .auth-card {
-    width: 75%;
-    }
-
-    #login-card {
-    margin-top: 25px;
-    }
-    
 }

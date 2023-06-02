@@ -16,11 +16,17 @@
     <nav class="navbar">
         <div class="navbar-logo">
             <a href="/">
-                <img src="/images/logo.png"  class="logo-img" alt="Scriptly Speaking">
-            </a>    
+            <img src="/images/logo.png" class="logo-img" alt="Scriptly Speaking">
+            </a>
         </div>
-        
-        <ul class="nav-list">
+
+        <div class="navbar-hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-list" id="navList">
             <li><a href="/" class="nav-link">Home</a></li>
             <li><a href="/dash" class="nav-link">Dash</a></li>
             <li><a href="/new" class="nav-link">New</a></li>
@@ -33,11 +39,11 @@
         </ul>
     </nav>
 
+
     {{{ body }}}
 
     <script src="/js/openPost.js"></script>
-
-<script src="/js/hamburger.js"></script>
+    <script src="/js/hamburger.js"></script>
 
 </body>
 
