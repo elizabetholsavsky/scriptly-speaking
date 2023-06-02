@@ -15,6 +15,7 @@
             </div> 
         {{/if}}
         
+        {{#if loggedIn}}
         {{!-- line break to separate post and comments --}}
         <hr>
 
@@ -41,6 +42,9 @@
                     </div>
             </form>
         </div>
+        {{else}}
+        <a href="/login" class="med-yellow-title">Log in to comment!</a>
+        {{/if}}
     </div>
 </div>
 
