@@ -37,6 +37,7 @@ body {
     padding: 10px 30px 10px 30px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 .logo-img {
@@ -81,9 +82,8 @@ body {
 /* LOGIN & SIGN UP ***********************/
 .card-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh; 
+    margin-top: 5%;
     flex-wrap: wrap;
 }
 
@@ -145,14 +145,6 @@ body {
 }
 
 /* NEW POST ************************/
-.post-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    flex-wrap: wrap;
-}
-
 .new-post-card {
     display: flex;
     justify-content: center;
@@ -218,11 +210,6 @@ body {
 }
 
 /* READ SINGLE POST ***********************/
-.post-container {
-    display: flex;
-    justify-content: center;
-}
-
 .post-card {
     display: inline-block;
     border-radius: 20px;
@@ -308,11 +295,15 @@ hr {
 }
 
 /* HOME FEED  ***********************/
-.feed-post-container {
+.feed-card-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
+.dash-post-card-container {
+
+}
 .med-yellow-title {
     color: var(--cheese);
     margin: 5px;
@@ -342,10 +333,17 @@ hr {
         background-color: #f9f9f9;
         padding: 10px;
         width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .navbar, .nav-list {
+        margin: 0;
+        padding: 0;
     }
 
     .nav-list li {
-        margin: 5px;
+        margin: 5px 0 5px 0;
     }
 
     .nav-list.open {
@@ -382,7 +380,4 @@ hr {
         margin: 5px;
     }
 
-    #new-post-body {
-        height: 200px;
-    }
 }
