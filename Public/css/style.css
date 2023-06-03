@@ -192,7 +192,7 @@ html{
 
 .submit-btn {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     color: var(--live-laugh-beige);
     font-size: 1rem;
     font-family: 'Secular One', sans-serif;
@@ -200,15 +200,15 @@ html{
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    text-shadow: 4px 4px 8px var(--judgement-gray);
+    background-image: linear-gradient(var(--blue-it), var(--really-blue-it));
+    text-shadow: 2px 2px 2px var(--judgement-gray);
     cursor: pointer;
     width: 100px;
     margin: 10px;
-    background-image: linear-gradient(var(--daily-rind), rgb(102, 61, 17) );
 }
 
 .submit-btn:hover {
-    background: rgb(102, 61, 17);
+    background: var(--really-blue-it);
 }
 
 /* READ SINGLE POST ***********************/
@@ -255,34 +255,15 @@ hr {
     margin-bottom: 20px;
 }
 
-.delete-btn {
-    display: inline-block;
-    padding: 10px;
-    color: var(--live-laugh-beige);
-    font-size: 1rem;
-    font-family: 'Secular One', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
-    text-shadow: 4px 4px 8px var(--judgement-gray);
-    cursor: pointer;
-    width: 100px;
-    margin: 10px;
-    background-image: linear-gradient(var(--red-zeppelin), var(--ron-burgundy));
-}
-
-.delete-btn:hover {
-    background: var(--ron-burgundy);
-}
-
 .comments {
     padding: 10px;
 }
 
 .quotes, .quotes-left {
-    color: var(--daily-rind);
+    color: var(--blue-it);
     font-family: 'Secular One', sans-serif;
+    margin: 0 5px 0 5px;
+    text-shadow: 4px 4px 8px var(--slim-shady);
 }
 
 .quotes-left {
@@ -378,7 +359,7 @@ hr {
         display: block;
         width: 25px;
         height: 4px;
-        background-color: var(--judgement-gray);
+        background-color: black;
         border-radius: 2px;
         margin-bottom: 5px;
         border-radius: 20px;
@@ -389,10 +370,6 @@ hr {
         position: fixed;
         top: 0;
         width: 100%;
-        }
-
-    .edit-btn {
-        margin: 5px;
     }
 
     .feed-card-first-container, .card-container {
