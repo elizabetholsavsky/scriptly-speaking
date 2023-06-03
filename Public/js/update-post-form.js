@@ -19,8 +19,6 @@ const showUpdateForm = (event) => {
         </form>
     `;
 
-    document.getElementById('send-update-btn').addEventListener('click', updatePost);
-
     const updatePost = async (event) => {
         event.preventDefault();
     
@@ -29,15 +27,14 @@ const showUpdateForm = (event) => {
         const url = window.location.toString().split('/');
         const post_id = url[url.length - 1];
     
-        if (comment_body) {
-            const response = await fetch(`/api/post/${post_id}`, {
-                method: 'PUT',
-                body: JSON.stringify({
-                    title,
-                    post_body,
-                }),
-                headers: {
-                    'Content-Type': 'application/json',
+        const response = await fetch(`/api/post/${post_id}`, {
+            method: 'PUT',
+            body: JSON.stringify({
+                title,
+                post_body,
+            }),
+            headers: {
+                'Content-Type': 'application/json',
                 },
             });
     
@@ -46,9 +43,11 @@ const showUpdateForm = (event) => {
             } else {
                 alert(response.statusText);
             }
-        }
+        
     };
-}
+    
+    document.getElementById('send-update-btn').addEventListener('click', updatePost);
+};
 
 document.getElementById('update-btn').addEventListener('click', showUpdateForm);
 
