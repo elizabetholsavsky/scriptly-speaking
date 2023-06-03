@@ -340,9 +340,9 @@ hr {
 /* hamburger */
 @media screen and (max-width: 768px) {
     .nav-list {
-        position: absolute;
-        top: 100%;
-        left: 0;
+        display: none;
+        position: fixed;
+        top: 70px;
         width: 100%;
         overflow: hidden;
         white-space: nowrap;
@@ -365,7 +365,9 @@ hr {
 
     .navbar-hamburger {
         display: block;
-        position: relative;
+        position: fixed;
+        top: 15px;
+        right: 15px;
         text-align: right;
         padding: 10px;
         padding-left: 20px;
@@ -385,10 +387,58 @@ hr {
 
     .navbar {
         justify-content: center;
-    }
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
 
     .edit-btn {
         margin: 5px;
     }
 
+    .feed-card-first-container, .card-container {
+        margin-top: 15%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .logo-img {
+        height: 40px;
+        width: auto;
+    }
+
+    .nav-list {
+        top: 60px;
+    }
+
+    .navbar-hamburger {
+        top: 10px;
+        right: 10px;
+    }
+
+    .feed-card-first-container, .card-container {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .logo-img {
+        display: none;
+    }
+
+    .nav-list {
+        top: 50px;
+    }
+
+    .navbar {
+        justify-content: center;
+        position: fixed;
+        height: 50px;
+        width: 100%;
+    }
+
+    .feed-card-first-container, .card-container {
+        margin-top: 25%;
+    }
 }
