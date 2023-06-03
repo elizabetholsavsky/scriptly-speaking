@@ -164,7 +164,7 @@ html{
     text-align: center;
 }
 
-#new-post-title, #new-post-body {
+#new-post-title, #new-post-body, #update-post-title, #update-post-body {
     width: 80%;
     padding: 15px;
     margin: 10px;
@@ -174,7 +174,7 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
-#new-post-body {
+#new-post-body, #update-post-body {
     height: 300px;
     resize: vertical;
 }
