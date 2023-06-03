@@ -15,6 +15,7 @@
     --ron-burgundy:  #6a1e0e;
     --daily-rind: rgb(255, 155, 48);
     --cheese:  rgb(255, 221, 129);
+    --cheesy-btn:  rgb(220, 180, 71);
     /* base styles */
     color: var(--live-laugh-beige); 
     font-family: 'Roboto', sans-serif;    
@@ -199,16 +200,15 @@ html{
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    background-image: linear-gradient(var(--red-zeppelin), var(--ron-burgundy));
     text-shadow: 4px 4px 8px var(--slim-shady);
-    outline: var(--ron-burgundy);
     cursor: pointer;
     width: 100px;
     margin: 10px;
+    background-image: linear-gradient(var(--daily-rind), rgb(102, 61, 17) );
 }
 
 .submit-btn:hover {
-    background: var(--ron-burgundy);
+    background: rgb(102, 61, 17);
 }
 
 /* READ SINGLE POST ***********************/
@@ -255,26 +255,25 @@ hr {
     margin-bottom: 20px;
 }
 
-.edit-btn {
+.delete-btn {
     display: inline-block;
     padding: 10px;
-    color: black;
+    color: var(--live-laugh-beige);
     font-size: 1rem;
     font-family: 'Secular One', sans-serif;
-    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    background-image: linear-gradient(var(--cheese), var(--daily-rind));
-    outline: var(--ron-burgundy);
+    text-shadow: 4px 4px 8px var(--slim-shady);
     cursor: pointer;
     width: 100px;
     margin: 10px;
+    background-image: linear-gradient(var(--red-zeppelin), var(--ron-burgundy));
 }
 
-.edit-btn:hover {
-    background: var(--daily-rind);
+.delete-btn:hover {
+    background: var(--ron-burgundy);
 }
 
 .comments {
