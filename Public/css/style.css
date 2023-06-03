@@ -26,6 +26,8 @@ body {
     background: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -301,9 +303,10 @@ hr {
     flex-wrap: wrap;
 }
 
-.dash-post-card-container {
-
+.feed-card-first-container {
+    margin-top: 5%;
 }
+
 .med-yellow-title {
     color: var(--cheese);
     margin: 5px;
@@ -339,7 +342,7 @@ hr {
 
     .navbar, .nav-list {
         margin: 0;
-        padding: 0;
+        padding: 5px;
     }
 
     .nav-list li {
