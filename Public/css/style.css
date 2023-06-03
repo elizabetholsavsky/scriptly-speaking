@@ -22,7 +22,7 @@
 }
 
 /* cover img */
-body {
+html{
     background: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
@@ -240,6 +240,7 @@ body {
 
 .post-info {
     text-align: center;
+    text-shadow: 4px 4px 8px var(--slim-shady);
 }
 
 hr {
@@ -278,6 +279,16 @@ hr {
 
 .comments {
     padding: 10px;
+}
+
+.quotes, .quotes-left {
+    color: var(--daily-rind);
+    font-family: 'Secular One', sans-serif;
+}
+
+.quotes-left {
+    display: inline-block;
+    transform: scaleX(-1);
 }
 
 .comment-container {

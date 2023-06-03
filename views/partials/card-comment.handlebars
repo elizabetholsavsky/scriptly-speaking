@@ -1,4 +1,4 @@
 <div class="comments">    
-    <p>"{{this.comment_text}}"</p>
-    <p>—<strong>{{this.user.username}}</strong> on <strong>{{format_date this.createdAt}}</strong></p>
+    <p><span class="quotes-left">"</span>{{this.comment_text}}<span class="quotes">"</span></p>
+    <p class="post-info">—<span class="username">{{this.user.username}}</span>, <strong>{{format_date this.createdAt}}</strong></p>
 </div>
