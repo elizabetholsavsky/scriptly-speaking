@@ -1,5 +1,5 @@
 <div class="comments">    
-    <p><span class="quotes-left">"</span>{{this.comment_text}}<span class="quotes">"</span></p>
+    <p><span class="quotes-left">"</span><span id="comment-text">{{this.comment_text}}</span><span class="quotes">"</span></p>
     <p class="post-info">—<span class="username">{{this.user.username}}</span>, <strong>{{format_date this.createdAt}}</strong></p>
     {{#if myComment}}
     <div class="btn-container">
