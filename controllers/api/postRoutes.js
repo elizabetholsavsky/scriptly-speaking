@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post, Comment, Update } = require('../../models');
+const { User, Post, Comment } = require('../../models');
 
 // new post
 router.post('/', async (req, res) => {
@@ -65,14 +65,6 @@ router.get('/:id', async (req, res) => {
             include: [{
                 model: User,
                 attributes: { exclude: ['password'] },
-            },
-            {
-                model: Update,
-                include: {
-                    model: User,
-                    attributes: ['username'],
-                },
-                order: [['created_at', 'ASC']]
             },
             {
                 model: Comment,
