@@ -24,7 +24,7 @@
 
 /* cover img */
 html{
-    background: url(../images/background.jpg);
+    background: url(/images/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
