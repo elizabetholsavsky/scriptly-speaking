@@ -6,7 +6,7 @@
 
 :root {
     /* color palette */
-    --judgement-gray: rgba(35, 35, 35, 0.8);
+    --judgement-gray: rgba(35, 35, 35, 0.825);
     --no-feet: rgba(131, 129, 129, 0.5);
     --slim-shady: rgba(0, 0, 0, 0.5);
     --live-laugh-beige:  rgb(252, 245, 237) ;
@@ -201,7 +201,7 @@ html{
     border: none;
     border-radius: 10px;
     background-image: linear-gradient(var(--blue-it), var(--really-blue-it));
-    text-shadow: 2px 2px 2px var(--judgement-gray);
+    text-shadow: 2px 2px 2px var(--slim-shady);
     cursor: pointer;
     width: 100px;
     margin: 10px;
@@ -253,10 +253,12 @@ hr {
 
 .post-body {
     margin-bottom: 20px;
+    text-shadow: 4px 4px 8px var(--slim-shady);
 }
 
 .comments {
     padding: 10px;
+    text-shadow: 4px 4px 8px var(--slim-shady);
 }
 
 .quotes, .quotes-left {
