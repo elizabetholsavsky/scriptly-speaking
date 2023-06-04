@@ -1,6 +1,3 @@
-const url = window.location.toString().split('/');
-const post_id = url[url.length - 1];
-
 const deletePost = async (event) => {
     event.preventDefault();
     event.stopPropagation();

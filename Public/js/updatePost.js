@@ -7,10 +7,10 @@ const showUpdateForm = (event) => {
 
     updateCard.innerHTML = `
         <form #update-post-form">
-            <label for="title">Title</label> <br>
+            <label for="update-post-title">Title</label> <br>
             <input type="text" id="update-post-title" value=${originalTitle}> <br>
 
-            <label for="body">Body</label> <br>
+            <label for="update-post-body">Body</label> <br>
             <textarea id="update-post-body">${originalText}</textarea> <br>
 
             <div class="btn-container">
@@ -50,4 +50,3 @@ const showUpdateForm = (event) => {
 };
 
 document.getElementById('update-btn').addEventListener('click', showUpdateForm);
-
