@@ -1,7 +1,11 @@
 {
-  "name": "tech-blog",
+  "name": "scriptly-speaking",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+    "node": "16.19.1",
+    "npm": "8.19.3"
+  },
+  "description": "Javascript Tech Blog",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elizabetholsavsky/tech-blog.git"
+    "url": "git+https://github.com/elizabetholsavsky/scriptly-speaking.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/elizabetholsavsky/tech-blog/issues"
+    "url": "https://github.com/elizabetholsavsky/scriptly-speaking/issues"
   },
-  "homepage": "https://github.com/elizabetholsavsky/tech-blog#readme",
+  "homepage": "https://github.com/elizabetholsavsky/scriptly-speaking#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.7",
