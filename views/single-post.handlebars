@@ -19,7 +19,7 @@
         {{!-- line break to separate post and comments --}}
         <hr>
 
-        <div class="comment-container">
+        <div class="comment-container" id="comment-card">
             {{!-- show title if comment(s) exists, otherwise just show form --}}
             {{#if comments}}
                 <p class="comment-title"><strong>Comments</strong></p>
@@ -52,3 +52,4 @@
 <script src="/js/deletePost.js"></script>
 <script src="/js/updatePost.js"></script>
 <script src="/js/deleteComment.js"></script>
+<script src="/js/updateComment.js"></script>
