@@ -1,7 +1,6 @@
-const showCommentUpdateForm = (event) => {
+const showCommentUpdateForm = (event, originalCommentText) => {
     event.preventDefault();
 
-    const originalCommentText = document.getElementById(`comment-text`).textContent.trim();
     const updateCard = document.getElementById(`comment-card`);
     const comment_id = event.target.dataset.id;
 
@@ -42,11 +41,11 @@ const showCommentUpdateForm = (event) => {
     };
     
     document.getElementById('send-comment-btn').addEventListener('click', updateComment);
-
 };
 
 const commentUpdateBtn = document.querySelectorAll('#comment-update-btn');
 
 for (let i = 0; i < commentUpdateBtn.length; i++) {
-        commentUpdateBtn[i].addEventListener('click', showCommentUpdateForm);
+    const originalCommentText = commentUpdateBtn[i].closest('.comments').querySelector('#comment-text').textContent.trim();
+    commentUpdateBtn[i].addEventListener('click', (event) => showCommentUpdateForm(event, originalCommentText));
 };
