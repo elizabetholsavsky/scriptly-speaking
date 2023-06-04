@@ -266,10 +266,13 @@ hr {
     text-shadow: 4px 4px 8px var(--slim-shady);
 }
 
+/* flip left quote vertically and horizontally, move line height upwards */
 .quotes-left {
     display: inline-block;
-    transform: scaleX(-1);
-}
+    transform: scale(-1, -1);
+    position: relative;
+    top: -0.4em; 
+};
 
 .comment-container {
     text-align: center;
