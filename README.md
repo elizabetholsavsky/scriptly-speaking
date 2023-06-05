@@ -20,9 +20,9 @@
 
 [*Scriptly Speaking*](https://scriptlyspeaking.herokuapp.com/) is a CMS-stlye blog site created using the MVC paradigm. The project uses Handlebars.js as the templating lanuage, Sequelize as the ORM, and the express-session npm package for authentication. Users have the ability to create, edit, and delete both posts and comments when logged in to the site. Nonmembers have the ability to only view posts and comments and are prompted to log in if they would like to leave a comment or post.  
 
-<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9119796b-4836-4b82-8fc0-76497b353e9d" width="1000" height="auto"></a>
-<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/752c1862-c402-4c83-925a-db3202194974" width="500" height="auto"></a>
-<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/b440a5fb-7689-45dc-bc65-8daf7420a925" width="500" height="auto"></a>
+<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9119796b-4836-4b82-8fc0-76497b353e9d" width="800" height="auto"></a>
+<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/752c1862-c402-4c83-925a-db3202194974" width="400" height="auto"></a>
+<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/b440a5fb-7689-45dc-bc65-8daf7420a925" width="400" height="auto"></a>
 
 ## Table of Contents
 
