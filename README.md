@@ -2,7 +2,7 @@
   
   <a href="https://scriptlyspeaking.herokuapp.com/"><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9fb5b605-c5f1-46b9-89eb-cc9067a6f9d9" width="500" height="auto"></a>
   
-  https://scriptlyspeaking.herokuapp.com/
+  [https://scriptlyspeaking.herokuapp.com/](https://scriptlyspeaking.herokuapp.com/)
   
   <a href="">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a>
   <a href="">[![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)](https://nodejs.org/en)</a>
