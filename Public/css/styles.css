@@ -255,6 +255,7 @@ hr {
 .post-body {
     margin-bottom: 20px;
     text-shadow: 4px 4px 8px var(--slim-shady);
+    word-wrap: break-word;
 }
 
 .comments {
