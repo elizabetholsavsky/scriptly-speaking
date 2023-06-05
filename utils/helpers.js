@@ -4,6 +4,7 @@ format_date: (date) => {
     return date.toDateString()
 },
 
+// preview how many comments on post in feed and dash
 num_of_comments: (comments) => {
 
     switch (comments.length) {

@@ -1,3 +1,4 @@
+// helper to see requests in the console
 const clog = (req, res, next) => {
     const fgCyan = '\x1b[36m';
     const defColor = '\x1b[0m';
