@@ -30,7 +30,7 @@
 
 ## Installation
 
-No installation is required when visiting the deployed Heroku link.
+No installation is required when visiting the [deployed Heroku link](https://scriptlyspeaking.herokuapp.com/).
 
 The project can also be run locally using the following steps:
 * Check if you have Node.js installed by typing `node -v` in your command line. If node is not installed, visit the [Node.js](https://nodejs.org/en) website to install. 
@@ -49,6 +49,10 @@ DB_PW='YOUR PASSWORD'
 * Alternatively, start server with Nodemon (and restart server automatically when making changes to code) with command `npm run watch`.
 
 ## Usage
+
+Access the [deployed Heroku link](https://scriptlyspeaking.herokuapp.com/) using your preferred browser. (Local users can access `http://localhost:3001` using `npm start`)
+* Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) You will automaticaly be logged in after account creation. Remember your log in credentials for future visits.
+
 
 ## License
 
