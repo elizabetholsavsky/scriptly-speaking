@@ -76,6 +76,9 @@ This project was completed as a challenge assignment for UT Austin Boot Camps. I
 * Chris McNamara ([rmessett15](https://github.com/cmcnamara15))
 * Brian Hamlin ([MisterBham](https://github.com/MisterBham)). 
 
+Abstract backgrounf image was created using [Midjourney](https://www.midjourney.com/) v5.
+Branding logo was created using [Text Studio](https://www.textstudio.com/).
+
 ## Questions
 
 Contact:
