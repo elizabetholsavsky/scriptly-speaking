@@ -18,6 +18,8 @@
 
 ## Description
 
+*Scriptly Speaking* is a CMS-stlye blog site created using the MVC paradigm. The project uses Handlebars.js as the templating lanuage, Sequelize as the ORM, and the express-session npm package for authentication. Users have the ability to create, edit, and delete both posts and comments when logged in to the site. Nonmembers have the ability to only view posts and comments and are prompted to log in if they would like to leave a comment or post.  
+
 ## Table of Contents
 
 * [Installation](#installation)
@@ -28,6 +30,8 @@
 
 ## Installation
 
+No installation is required when visiting the deployed Heroku link.
+The project can also be run locally.
 ## Usage
 
 ## License
