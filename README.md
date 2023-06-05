@@ -55,7 +55,7 @@ Access the [deployed Heroku link](https://scriptlyspeaking.herokuapp.com/) using
 * Create a new post from anywhere on the site by clicking 'NEW' in the nav bar. Enter a title and post body and click 'POST'. The new post is now viewable on the 'main feed' and 'dash' view.
 * The homepage ('main feed') shows all blog post previews by all users and can be accessed by clicking the logo in the nav or 'HOME'. This view is public and can be accessed when logged out as well. 
 * The 'dash' shows only blog post previews written by the user who is currently logged in. 
-* Post previews from the homepage and dash are clickable and take you to a single page view of that specific post. Here you can read comemnts, write comments, or update the post if you are the author.
+* Post previews from the homepage and dash are clickable and take you to a single page view of that specific post. Here you can read comments, write comments, or update the post if you are the author.
 * Log out of the current session by clicking 'LOG OUT' in the nav bar.
 
 Local users can access `http://localhost:3001` using `npm start`.
@@ -77,5 +77,4 @@ This project was completed as a challenge assignment for UT Austin Boot Camps. I
 Contact:
 
 * Github [elizabetholsavsky](https://github.com/elizabetholsavsky)
-
 * Email elizabetholsavsky@gmail.com
