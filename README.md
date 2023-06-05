@@ -50,9 +50,15 @@ DB_PW='YOUR PASSWORD'
 
 ## Usage
 
-Access the [deployed Heroku link](https://scriptlyspeaking.herokuapp.com/) using your preferred browser. (Local users can access `http://localhost:3001` using `npm start`)
-* Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) You will automaticaly be logged in after account creation. Remember your log in credentials for future visits.
+Access the [deployed Heroku link](https://scriptlyspeaking.herokuapp.com/) using your preferred browser.
+* Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) After confirming your password and clicking 'submit', you will be logged in automatically after account creation. Remember your log in credentials for future visits!
+* Create a new post from anywhere on the site by clicking 'NEW' in the nav bar. Enter a title and post body and click 'POST'. The new post is now viewable on the 'main feed' and 'dash' view.
+* The homepage ('main feed') shows all blog post previews by all users and can be accessed by clicking the logo in the nav or "HOME". This view is public and can be accessed when logged out as well. 
+* The 'dash' shows only blog post previews written by the user who is currently logged in. 
+* Post previews from the homepage and dash are clickable and take you to a single page view of that specific post. Here you can read comemnts, write comments, or update the post if you are the author.
+* Log out of the current session by clicking 'LOG OUT' in the nav bar.
 
+Local users can access `http://localhost:3001` using `npm start`.
 
 ## License
 
