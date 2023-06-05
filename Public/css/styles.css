@@ -261,6 +261,7 @@ hr {
 .comments {
     padding: 10px;
     text-shadow: 4px 4px 8px var(--slim-shady);
+    word-wrap: break-word;
 }
 
 .quotes, .quotes-left {
@@ -268,6 +269,7 @@ hr {
     font-family: 'Secular One', sans-serif;
     margin: 0 5px 0 5px;
     text-shadow: 4px 4px 8px var(--slim-shady);
+    line-height: 1rem;
 }
 
 /* flip left quote vertically and horizontally, move line height upwards */
@@ -275,7 +277,7 @@ hr {
     display: inline-block;
     transform: scale(-1, -1);
     position: relative;
-    top: -0.4em; 
+    top: -0.5em; 
 };
 
 .comment-container {
