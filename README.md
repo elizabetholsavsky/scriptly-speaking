@@ -65,7 +65,12 @@ Local users can access `http://localhost:3001` using `npm start`.
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contributing
-This project was completed as a challenge assignment for UT Austin Boot Camps. I was able to learn and apply a great wealth of knowledge from my most current group project [Fusion Fables](http://www.fusionfables.com/), a blog style webite built for writer collaboration ([Spurce Code](https://github.com/HunterHester/fusion-fables)) built with my talented teammates Eric Easthope ([eeast](https://github.com/eeast)), Hunter Hester ([HunterHester](https://github.com/HunterHester)), Ryan Messett ([rmessett15](https://github.com/rmessett15)), Chris McNamara ([rmessett15](https://github.com/cmcnamara15)), and Brian Hamlin ([MisterBham](https://github.com/MisterBham)). 
+This project was completed as a challenge assignment for UT Austin Boot Camps. I was able to learn and apply a great wealth of knowledge from my most current group project [Fusion Fables](http://www.fusionfables.com/), a blog style webite built for writer collaboration ([Source Code](https://github.com/HunterHester/fusion-fables)) built with my talented teammates:
+* Eric Easthope ([eeast](https://github.com/eeast))
+* Hunter Hester ([HunterHester](https://github.com/HunterHester))
+* Ryan Messett ([rmessett15](https://github.com/rmessett15))
+* Chris McNamara ([rmessett15](https://github.com/cmcnamara15))
+* Brian Hamlin ([MisterBham](https://github.com/MisterBham)). 
 
 ## Questions
 
