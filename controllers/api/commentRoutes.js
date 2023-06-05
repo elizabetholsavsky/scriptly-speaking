@@ -1,5 +1,7 @@
 const router = require('express').Router();
-const { User, Post, Comment, Update } = require('../../models');
+const { Comment } = require('../../models');
+
+// ROUTES http://localhost:3001/api/comment/
 
 // new comment
 router.post('/', async (req, res) => {
@@ -9,7 +11,6 @@ router.post('/', async (req, res) => {
             post_id: req.body.post_id,
             user_id: req.session.user_id || req.body.user_id
         });
-        
         res.status(200).json(comment);
     } catch (err) {
         console.error(err);
@@ -25,7 +26,6 @@ router.delete('/:id', async (req, res) => {
                 id: req.params.id,
             },
         }); 
-        console.log(comment);
         if(!comment) {
         res.status(404).json({ message: 'No comment found with that id!' });
         return;
@@ -44,13 +44,10 @@ router.put('/:id', async (req, res) => {
                 id: req.params.id
             }
         });
-
         if (!updatedComment[0]) {
             res.status(400).json({ message: "No comment found with that id!" });
             return;
         }
-
-        console.log('Comment updated!');
         res.status(200).json(updatedComment);
     } catch (err) {
         console.error(err);

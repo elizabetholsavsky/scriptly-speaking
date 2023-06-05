@@ -1,5 +1,7 @@
 const router = require('express').Router();
-const { User, Post, Comment, Update } = require('../../models');
+const { User, Post, Comment } = require('../../models');
+
+// ROUTES http://localhost:3001/api/post/
 
 // new post
 router.post('/', async (req, res) => {
@@ -10,7 +12,6 @@ router.post('/', async (req, res) => {
             user_id: req.session.user_id || req.body.user_id
         });
         res.status(200).json(newPost);
-        console.log('Post created!');
     } catch (err) {
         res.status(400).json(err);
     }
@@ -25,12 +26,10 @@ router.delete('/:id', async (req, res) => {
                 user_id: req.session.user_id,
             },
         });
-    
     if (!postData) {
         res.status(404).json({ message: "No post with that id!"});
         return;
     }
-
     res.status(200).json(postData);
     } catch (err) {
         res.status(500).json(err);
@@ -45,13 +44,11 @@ router.put('/:id', async (req, res) => {
                 id: req.params.id
             }
         });
-        console.log(updatedPost)
         if (!updatedPost[0]) {
             res.status(400).json({ message: "No post found with that id!" });
             return;
         }
         res.status(200).json(updatedPost);
-        console.log('Post updated!');
     } catch (err) {
         console.error(err);
         res.status(500).json(err);
@@ -67,14 +64,6 @@ router.get('/:id', async (req, res) => {
                 attributes: { exclude: ['password'] },
             },
             {
-                model: Update,
-                include: {
-                    model: User,
-                    attributes: ['username'],
-                },
-                order: [['created_at', 'ASC']]
-            },
-            {
                 model: Comment,
                 include: {
                     model: User,
@@ -84,12 +73,12 @@ router.get('/:id', async (req, res) => {
             }],
         });
 
-        // Adds verification of user to post
+        // verify if POST belongs to user
         const myBlog = req.session.user_id === postData.user.id;
         const post = postData.get({ plain: true });
         post['myBlog'] = myBlog;
 
-        // Adds verification of user to comments
+        // verify if COMMENT belongs to user
         const comments = postData.comments.map(comment => {
             const myComment = req.session.user_id === comment.user.id;
             const c = comment.get({ plain: true });

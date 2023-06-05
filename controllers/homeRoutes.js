@@ -1,7 +1,9 @@
 const router = require('express').Router();
-const { User, Post, Comment, Update } = require('../models');
+const { User, Post, Comment } = require('../models');
 
-// home (feed)
+// ROUTES http://localhost:3001/
+
+// render home (main feed; public)
 router.get('/', async (req, res) => {
     try {
         const postData = await Post.findAll({
@@ -30,7 +32,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// dash
+// render dash (unique to user, shows only user's posts, only accessed when logged in)
 router.get('/dash', async (req, res) => {
     try {
         if (req.session.logged_in) {
@@ -73,7 +75,7 @@ router.get('/dash', async (req, res) => {
 router.get('/login', async (req, res) => {
     try {
         if (req.session.logged_in) {
-            res.redirect('/feed');
+            res.redirect('/');
             return;
         }
         res.render('login');
@@ -83,7 +85,7 @@ router.get('/login', async (req, res) => {
     }
 });
 
-// render new post page if logged in
+// render new post page (if logged in)
 router.get('/new', async (req, res) => {
     try {
         if (req.session.logged_in) {
@@ -100,6 +102,5 @@ router.get('/new', async (req, res) => {
         res.status(500).json(err);
     }
 });
-
 
 module.exports = router;

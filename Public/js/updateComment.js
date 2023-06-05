@@ -39,7 +39,7 @@ const showCommentUpdateForm = (event, originalCommentText) => {
             }
         
     };
-    
+
     document.getElementById('send-comment-btn').addEventListener('click', updateComment);
 };
 
