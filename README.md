@@ -31,7 +31,23 @@
 ## Installation
 
 No installation is required when visiting the deployed Heroku link.
-The project can also be run locally.
+
+The project can also be run locally using the following steps:
+* Check if you have Node.js installed by typing `node -v` in your command line. If node is not installed, visit the [Node.js](https://nodejs.org/en) website to install. 
+* Next, clone this project repository to your computer. 
+* Use the command `npm i` to install dependencies. 
+* Create a file in the root directory titled `.env` and include database name and personal MySQL login information:
+```
+DB_NAME='YOUR DATABASE NAME'
+DB_USER='YOUR USERNAME'
+DB_PW='YOUR PASSWORD'
+```
+* Open MySQL with command `mysql -u root -p` and enter your personal MySQL password. 
+* Create databse with command `source schema.sql`. Log out of MySQL with command `\q`.
+* Seed database with command `npm run seed`.
+* Start server with command `npm start`.
+* Alternatively, start server with Nodemon (and restart server automatically when making changes to code) with command `npm run watch`.
+
 ## Usage
 
 ## License
