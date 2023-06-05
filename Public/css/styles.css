@@ -23,13 +23,14 @@
 }
 
 /* cover img */
-html{
+html {
     background: url(/images/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    background-color: black;
 }
 
 /* NAV ***********************/
