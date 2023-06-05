@@ -20,7 +20,12 @@ app.use(clog);
 // configure session object with store
 const sess = {
     secret: 'secret',
-    cookie: {},
+    cookie: {
+        maxAge: 300000,
+        httpOnly: true,
+        secure: false,
+        sameSite: 'strict',
+    },
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
@@ -43,7 +48,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // serve static files/import css with direct path
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname + 'public')));
 
 // connect to routes in 'controller' folder
 app.use(routes);
