@@ -1,7 +1,9 @@
 const router = require('express').Router();
-const { User, Post, Comment } = require('../../models');
+const { User } = require('../../models');
 
-// Log-in 
+// ROUTES http://localhost:3001/api/user/
+
+// log-in 
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({ where: { username: req.body.username }});
@@ -22,7 +24,7 @@ router.post('/login', async (req, res) => {
             req.session.user_id = userData.id;
             req.session.logged_in = true;
             req.session.username = userData.username;
-            res.json({ user: userData, message: "You're in, welcome!" })
+            res.json({ user: userData, message: "You're in! Welcome!" })
         });
 
     } catch (err) {
@@ -30,7 +32,7 @@ router.post('/login', async (req, res) => {
     };
 });
 
-// Sign-up
+// sign-up
 router.post('/', async (req, res) => {
     try {
         const userData = await User.create(req.body);
@@ -46,7 +48,7 @@ router.post('/', async (req, res) => {
     };
 });
 
-// Log-out
+// log-out
 router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
         req.session.destroy(() => {
@@ -55,22 +57,6 @@ router.post('/logout', (req, res) => {
     } else {
         res.status(404).end();
     };
-});
-
-// ***********INSOMNIA ROUTES***********
-
-// Get all users 
-router.get('/', async (req, res) => {
-    try {
-        const userData = await User.findAll({
-            attributes: {
-                // exclude: ['password']
-            }
-        });
-        res.status(200).json(userData);
-    } catch (err) {
-    res.status(500).json(err);
-    }
 });
 
 module.exports = router;
