@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
         if (response.ok) {
         document.location.replace('/');
         } else {
-            alert('Check username and/or password and try again.');
+            openAlertModal();
         }
     }
 };
