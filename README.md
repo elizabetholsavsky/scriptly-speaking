@@ -18,7 +18,11 @@
 
 ## Description
 
-*Scriptly Speaking* is a CMS-stlye blog site created using the MVC paradigm. The project uses Handlebars.js as the templating lanuage, Sequelize as the ORM, and the express-session npm package for authentication. Users have the ability to create, edit, and delete both posts and comments when logged in to the site. Nonmembers have the ability to only view posts and comments and are prompted to log in if they would like to leave a comment or post.  
+[*Scriptly Speaking*](https://scriptlyspeaking.herokuapp.com/) is a CMS-stlye blog site created using the MVC paradigm. The project uses Handlebars.js as the templating lanuage, Sequelize as the ORM, and the express-session npm package for authentication. Users have the ability to create, edit, and delete both posts and comments when logged in to the site. Nonmembers have the ability to only view posts and comments and are prompted to log in if they would like to leave a comment or post.  
+
+<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9119796b-4836-4b82-8fc0-76497b353e9d" width="800" height="auto"></a>
+<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/752c1862-c402-4c83-925a-db3202194974" width="400" height="auto"></a>
+<a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/b440a5fb-7689-45dc-bc65-8daf7420a925" width="400" height="auto"></a>
 
 ## Table of Contents
 
@@ -51,12 +55,12 @@ DB_PW='YOUR PASSWORD'
 ## Usage
 
 Access the [deployed Heroku link](https://scriptlyspeaking.herokuapp.com/) using your preferred browser.
-* Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) After confirming your password and clicking 'submit', you will be logged in automatically after account creation. Remember your log in credentials for future visits!
-* Create a new post from anywhere on the site by clicking 'NEW' in the nav bar. Enter a title and post body and click 'POST'. The new post is now viewable on the 'main feed' and 'dash' view.
-* The homepage ('main feed') shows all blog post previews by all users and can be accessed by clicking the logo in the nav or 'HOME'. This view is public and can be accessed when logged out as well. 
-* The 'dash' shows only blog post previews written by the user who is currently logged in. 
-* Post previews from the homepage and dash are clickable and take you to a single page view of that specific post. Here you can read comments, write comments, or update the post if you are the author.
-* Log out of the current session by clicking 'LOG OUT' in the nav bar.
+* Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) After confirming your password and clicking `submit`, you will be logged in automatically after account creation. Remember your log in credentials for future visits!
+* Create a new post from *anywhere* on the site by clicking `NEW` in the nav bar. Enter a title and post body and click `POST`. The new post is now viewable on the 'main feed' and 'dash' view.
+* The homepage ('main feed') shows all blog post previews by all users and can be accessed by clicking the logo in the nav or `HOME`. This view is public and can also be accessed when logged out. 
+* The `DASH` shows only blog post previews written by the user who is currently logged in. 
+* Post previews from the homepage and dash feeds are clickable and take you to a single page view of that specific post. Here you can read comments, write comments, and/or update the post *if* you are the author.
+* Log out of the current session by clicking `LOG OUT` in the nav bar.
 
 Local users can access `http://localhost:3001` using `npm start`.
 
@@ -65,12 +69,16 @@ Local users can access `http://localhost:3001` using `npm start`.
 [MIT License](https://opensource.org/licenses/MIT)
 
 ## Contributing
-This project was completed as a challenge assignment for UT Austin Boot Camps. I was able to learn and apply a great wealth of knowledge from my most current group project [Fusion Fables](http://www.fusionfables.com/), a blog style webite built for writer collaboration ([Source Code](https://github.com/HunterHester/fusion-fables)) built with my talented teammates:
+This project was completed as a challenge assignment for UT Austin Boot Camps. I was able to learn and apply a great wealth of knowledge from my most current group project [Fusion Fables](http://www.fusionfables.com/), a blog-style website built for writer collaboration ([Source Code](https://github.com/HunterHester/fusion-fables)). Check out my talented teammates:
 * Eric Easthope ([eeast](https://github.com/eeast))
 * Hunter Hester ([HunterHester](https://github.com/HunterHester))
 * Ryan Messett ([rmessett15](https://github.com/rmessett15))
 * Chris McNamara ([rmessett15](https://github.com/cmcnamara15))
 * Brian Hamlin ([MisterBham](https://github.com/MisterBham)). 
+
+Abstract background image was created using [Midjourney](https://www.midjourney.com/) v5.
+
+Branding logo was created using [Text Studio](https://www.textstudio.com/).
 
 ## Questions
 
