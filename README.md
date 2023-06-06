@@ -80,6 +80,8 @@ Abstract background image was created using [Midjourney](https://www.midjourney.
 
 Branding logo was created using [Text Studio](https://www.textstudio.com/).
 
+I was inspired to create my own modal after watch [this video](https://www.youtube.com/watch?v=q1fsBWLpYW4) created by [Fireship🔥](https://github.com/fireship-io).
+
 ## Questions
 
 Contact:
