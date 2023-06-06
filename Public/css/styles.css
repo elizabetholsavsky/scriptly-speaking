@@ -154,9 +154,8 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--ron-burgundy);
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
+    border-radius: 15px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.8); 
     width: 90%;
     height: auto;
     max-width: 480px;
@@ -177,9 +176,9 @@ html {
 }
 
 #sorry {
-    color: var(--live-laugh-beige);
+    color: var(--cheese);
     text-shadow: 2px 2px 2px var(--judgement-gray);
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-family: 'Secular One', sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -189,7 +188,7 @@ html {
 #modal-text {
     color: var(--live-laugh-beige);
     text-shadow: 2px 2px 2px var(--judgement-gray);
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     padding: 30px;
 }
