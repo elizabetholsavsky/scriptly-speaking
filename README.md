@@ -30,7 +30,7 @@
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Questions](#questions)
+* [Contact](#contact)
 
 ## Installation
 
@@ -82,10 +82,7 @@ Branding logo was created using [Text Studio](https://www.textstudio.com/).
 
 I was inspired to create my own modal after watch [this video](https://www.youtube.com/watch?v=q1fsBWLpYW4) created by [Fireship🔥](https://github.com/fireship-io).
 
-## Questions
-
-Contact:
-
+## Contact
 * Email elizabetholsavsky@gmail.com
 * LinkedIn [https://www.linkedin.com/in/elizabetholsavsky/](https://www.linkedin.com/in/elizabetholsavsky/)
 * Portfolio [https://elizabetholsavsky.com/](https://elizabetholsavsky.com/)
