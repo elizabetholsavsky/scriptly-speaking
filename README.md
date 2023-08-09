@@ -1,8 +1,8 @@
 <div align="center">
   
-  <a href="https://scriptlyspeaking.herokuapp.com/"><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9fb5b605-c5f1-46b9-89eb-cc9067a6f9d9" width="500" height="auto"></a>
+  <a href="https://scriptlyspeaking.tech/"><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9fb5b605-c5f1-46b9-89eb-cc9067a6f9d9" width="500" height="auto"></a>
   
-  [http://www.scriptlyspeaking.tech/](http://www.scriptlyspeaking.tech/)
+  [https://scriptlyspeaking.tech/](https://scriptlyspeaking.tech/)
   
   <a href="">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a>
   <a href="">[![Node.js Badge](https://img.shields.io/badge/Node.js-393?logo=nodedotjs&logoColor=fff&style=flat)](https://nodejs.org/en)</a>
@@ -18,7 +18,7 @@
 
 ## Description
 
-[*Scriptly Speaking*](https://scriptlyspeaking.herokuapp.com/) is a CMS-style blog site created using the MVC paradigm. The project uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. Users have the ability to create, edit, and delete both posts and comments when logged in to the site. Nonmembers have the ability to only view posts and comments and are prompted to log in if they would like to leave a comment or post.  
+[*Scriptly Speaking*](https://scriptlyspeaking.tech/) is a CMS-style blog site created using the MVC paradigm. The project uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication. Users have the ability to create, edit, and delete both posts and comments when logged in to the site. Nonmembers have the ability to only view posts and comments and are prompted to log in if they would like to leave a comment or post.  
 
 <a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/9119796b-4836-4b82-8fc0-76497b353e9d" width="800" height="auto"></a>
 <a><img src="https://github.com/elizabetholsavsky/scriptly-speaking/assets/116515976/752c1862-c402-4c83-925a-db3202194974" width="400" height="auto"></a>
@@ -34,7 +34,7 @@
 
 ## Installation
 
-No installation is required when visiting the [deployed Heroku link](http://www.scriptlyspeaking.tech/).
+No installation is required when visiting the [deployed Heroku link](https://scriptlyspeaking.tech/).
 
 The project can also be run locally using the following steps:
 * Check if you have Node.js installed by typing `node -v` in your command line. If node is not installed, visit the [Node.js](https://nodejs.org/en) website to install. 
@@ -54,7 +54,7 @@ DB_PW='YOUR PASSWORD'
 
 ## Usage
 
-Access the [deployed Heroku link](http://www.scriptlyspeaking.tech/) using your preferred browser.
+Access the [deployed Heroku link](https://scriptlyspeaking.tech/) using your preferred browser.
 * Sign up by creating a unique username and strong password. (Passwords must contain one uppercase letter, one lowercase letter, a digit, and a special character.) After confirming your password and clicking `submit`, you will be logged in automatically after account creation. Remember your log in credentials for future visits!
 * Create a new post from *anywhere* on the site by clicking `NEW` in the nav bar. Enter a title and post body and click `POST`. The new post is now viewable on the 'main feed' and 'dash' view.
 * The homepage ('main feed') shows all blog post previews by all users and can be accessed by clicking the logo in the nav or `HOME`. This view is public and can also be accessed when logged out. 
