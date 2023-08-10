@@ -77,7 +77,7 @@ This project was completed as a challenge assignment for UT Austin Boot Camps. I
 * Eric Easthope ([eeast](https://github.com/eeast))
 * Hunter Hester ([HunterHester](https://github.com/HunterHester))
 * Ryan Messett ([rmessett15](https://github.com/rmessett15))
-* Chris McNamara ([rmessett15](https://github.com/cmcnamara15))
+* Chris McNamara ([cmcnamara15](https://github.com/cmcnamara15))
 * Brian Hamlin ([MisterBham](https://github.com/MisterBham)). 
 
 Abstract background image was created using [Midjourney](https://www.midjourney.com/) v5.
